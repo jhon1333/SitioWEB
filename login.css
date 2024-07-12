@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.login-table {
+    background-color: #02a2ff;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.login-table .titulo {
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.login-table img {
+    width: 100px;
+    height: auto;
+    border-radius: 10%;
+}
+
+.login-table input[type="text"],
+.login-table input[type="password"] {
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.login-table input[type="text"]::placeholder,
+.login-table input[type="password"]::placeholder {
+    color: #999;
+}
+
+.login-table .botoncito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-table button,
+.login-table .btn-cita {
+    background-color: #0074cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.login-table button:hover,
+.login-table .btn-cita:hover {
+    background-color: #005b96;
+}
+
+.login-table button:focus,
+.login-table .btn-cita:focus {
+    outline: none;
+}
+
+.login-table .btn-cita {
+    background-color: #0074cc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.login-table .btn-cita:hover {
+    background-color: #005b96;
+}

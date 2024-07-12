@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Médica - Clínica Santa Fe</title>
+    <link rel="stylesheet" href="calendario.css">
+</head>
+<body>
+    <header>
+        <h1>Agenda Médica - Clínica Santa Fe</h1>
+    </header>
+    <main>
+        <section class="appointment-form">
+            <h2>Agendar Cita</h2>
+            <form id="appointmentForm">
+                <label for="doctor">Doctor:</label>
+                <select id="doctor" name="doctor">
+                    <option value="Dr. Juan Pérez">Dr. Juan Pérez</option>
+                    <option value="Dra. María López">Dra. María López</option>
+                    <option value="Dr. Carlos Ramírez">Dr. Carlos Ramírez</option>
+                </select>
+
+                <label for="specialty">Especialidad:</label>
+                <select id="specialty" name="specialty">
+                    <option value="General">General</option>
+                    <option value="Pediatría">Pediatría</option>
+                    <option value="Cardiología">Cardiología</option>
+                    <option value="Ginecología">Ginecología</option>
+                </select>
+
+                <label for="date">Día:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Hora:</label>
+                <input type="time" id="time" name="time" required>
+
+                <button type="submit">Agendar</button>
+            </form>
+        </section>
+        <section class="calendar">
+            <h2>Calendario</h2>
+            <div id="calendar"></div>
+        </section>
+    </main>
+    <script src="calendario.js"></script>
+</body>
+</html>
